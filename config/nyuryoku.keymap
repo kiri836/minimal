@@ -22,7 +22,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&sk SHFT>, <&kp CLCK>
+            bindings = <&sk SHFT>, <&kp CLCK>;
         };
         lse0: layerSwitchEncoder {
             compatible = "zmk,behavior-sensor-rotate";
