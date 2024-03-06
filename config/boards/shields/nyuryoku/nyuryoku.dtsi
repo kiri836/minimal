@@ -5,28 +5,28 @@
         zmk,kscan = &kscan0;
         zmk,matrix-transform = &default_transform;
     };
-    left_one_encoder: encoder_left {
+    left_one_encoder: encoder_left_one {
         compatible = "alps,ec11";
         a-gpios = <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <24>;
         status = "disabled";
     };
-    left_two_encoder: encoder_right {
+    left_two_encoder: encoder_left_two {
         compatible = "alps,ec11";
         a-gpios = <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <24>;
         status = "disabled";
     };
-    right_one_encoder: encoder_left {
+    right_one_encoder: encoder_right_one {
         compatible = "alps,ec11";
         a-gpios = <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <24>;
         status = "disabled";
     };
-    right_two_encoder: encoder_right {
+    right_two_encoder: encoder_right_two {
         compatible = "alps,ec11";
         a-gpios = <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
