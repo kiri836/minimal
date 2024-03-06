@@ -10,19 +10,21 @@
 #define NUMPAD 1
 #define KBS 2
 
-&sk {
-    release-after-ms = <1000>;
-    quick-release;
-    /delete-property/ ignore-modifiers;
-};
-
 / {
     behaviors {
+        skq: sticky_key_quick_release {
+            compatible = "zmk,behavior-sticky-key";
+            #binding-cells = <1>;
+            bindings = <&kp>;
+            release-after-ms = <1000>;
+            quick-release;
+            ignore-modifiers;
+        };
         td0: capitalization_tap_dance {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&sk SHFT>, <&kp CLCK>;
+            bindings = <&skq SHFT>, <&kp CLCK>;
         };
         lse0: layerSwitchEncoder {
             compatible = "zmk,behavior-sensor-rotate";
