@@ -7,10 +7,10 @@
         zmk,kscan = &kscan0;
         zmk,matrix-transform = &default_transform;
     };
-    &left_encoder {
+    &left_one_encoder {
         status = "okay";
     };
-    &right_encoder {
+    &left_two_encoder {
         status = "okay";
     };
     &kscan0 {
