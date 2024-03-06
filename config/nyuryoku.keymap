@@ -38,103 +38,103 @@
             timeout-ms = <200>;
             key-positions = <30 27 10>;
             bindings = <&kp EQUAL>;
-            layers = <0>
+            layers = <0>;
         };
         combo_plus {
             timeout-ms = <200>;
             key-positions = <31 4 10 13>;
             bindings = <&kp LPAR>;
-            layers = <0>
+            layers = <0>;
         };
         combo_forwardsqrbracket {
             timeout-ms = <200>;
             key-positions = <6 13 27 31>;
             bindings = <&kp LBKT>;
-            layers = <0>
+            layers = <0>;
         };
         combo_backwardsqrbracket {
             timeout-ms = <200>;
             key-positions = <31 13 27 31>;
             bindings = <&kp RBKT>;
-            layers = <0>
+            layers = <0>;
         };
         combo_asterisk {
             timeout-ms = <200>;
             key-positions = <30 13 9>;
             bindings = <&kp STAR>;
-            layers = <0>
+            layers = <0>;
         };
         combo_exclamation {
             timeout-ms = <200>;
             key-positions = <30 8 10>;
             bindings = <&kp EXCL>;
-            layers = <0>
+            layers = <0>;
         };
         combo_at {
             timeout-ms = <200>;
             key-positions = <30 12 19>;
             bindings = <&kp AT>;
-            layers = <0>
+            layers = <0>;
         };
         combo_hash {
             timeout-ms = <200>;
             key-positions = <30 18 12 13 18>;
             bindings = <&kp HASH>;
-            layers = <0>
+            layers = <0>;
         };
         combo_percent {
             timeout-ms = <200>;
             key-positions = <30 4 9 8 19>;
             bindings = <&kp PERCENT>;
-            layers = <0>
+            layers = <0>;
         };
         combo_dollar {
             timeout-ms = <200>;
             key-positions = <30 14 10 10 9>;
             bindings = <&kp DOLLAR>;
-            layers = <0>
+            layers = <0>;
         };
         combo_caret {
             timeout-ms = <200>;
             key-positions = <30 7 9 19>;
             bindings = <&kp CARET>;
-            layers = <0>
+            layers = <0>;
         };
         combo_forwardparanthesis {
             timeout-ms = <200>;
             key-positions = <30 10 4 9 19 18>;
             bindings = <&kp LPAR>;
-            layers = <0>
+            layers = <0>;
         };
         combo_backwardparanthesis {
             timeout-ms = <200>;
             key-positions = <30 9 4 9 19 18>;
             bindings = <&kp LPAR>;
-            layers = <0>
+            layers = <0>;
         };
         combo_question {
             timeout-ms = <200>;
             key-positions = <30 27 13 19>;
             bindings = <&kp QMARK>;
-            layers = <0>
+            layers = <0>;
         };
         combo_forwardbrace {
             timeout-ms = <200>;
             key-positions = <30 6 31 9 8>;
             bindings = <&kp LBRC>;
-            layers = <0>
+            layers = <0>;
         };
         combo_backwardbrace {
             timeout-ms = <200>;
             key-positions = <30 31 31 9 8>;
             bindings = <&kp RBRC>;
-            layers = <0>
+            layers = <0>;
         };
         combo_tilde {
             timeout-ms = <200>;
             key-positions = <30 19 10 17>;
             bindings = <&kp TILDE>;
-            layers = <0>
+            layers = <0>;
         };
     };
 
