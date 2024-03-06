@@ -1,4 +1,4 @@
-if SHIELD_MY_BOARD_RIGHT
+if SHIELD_MY_BOARD_LEFT
 
 config ZMK_KEYBOARD_NAME
     default "nyuryoku"
