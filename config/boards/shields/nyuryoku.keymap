@@ -1,0 +1,176 @@
+/*
+ * Copyright (c) 2021 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#define BASE 0
+#define NUMPAD 1
+#define KBS 2
+
+/ {
+    &sk {
+        release-after-ms = <1000>;
+        quick-release;
+        /delete-property/ ignore-modifiers;
+    };
+    behaviors {
+        td0: capitalization_tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&sk SHFT>, <&kp CLCK>
+        };
+        lse0: layerSwitchEncoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&to>, <&to>;
+        };
+    };
+    combos {
+        compatible = "zmk,combos";
+        combo_equal {
+            timeout-ms = <200>;
+            key-positions = <30 27 10>;
+            bindings = <&kp EQUAL>;
+            layers = <0>
+        };
+        combo_plus {
+            timeout-ms = <200>;
+            key-positions = <31 4 10 13>;
+            bindings = <&kp LPAR>;
+            layers = <0>
+        };
+        combo_forwardsqrbracket {
+            timeout-ms = <200>;
+            key-positions = <6 13 27 31>;
+            bindings = <&kp LBKT>;
+            layers = <0>
+        };
+        combo_backwardsqrbracket {
+            timeout-ms = <200>;
+            key-positions = <31 13 27 31>;
+            bindings = <&kp RBKT>;
+            layers = <0>
+        };
+        combo_asterisk {
+            timeout-ms = <200>;
+            key-positions = <30 13 9>;
+            bindings = <&kp STAR>;
+            layers = <0>
+        };
+        combo_exclamation {
+            timeout-ms = <200>;
+            key-positions = <30 8 10>;
+            bindings = <&kp EXCL>;
+            layers = <0>
+        };
+        combo_at {
+            timeout-ms = <200>;
+            key-positions = <30 12 19>;
+            bindings = <&kp AT>;
+            layers = <0>
+        };
+        combo_hash {
+            timeout-ms = <200>;
+            key-positions = <30 18 12 13 18>;
+            bindings = <&kp HASH>;
+            layers = <0>
+        };
+        combo_percent {
+            timeout-ms = <200>;
+            key-positions = <30 4 9 8 19>;
+            bindings = <&kp PERCENT>;
+            layers = <0>
+        };
+        combo_dollar {
+            timeout-ms = <200>;
+            key-positions = <30 14 10 10 9>;
+            bindings = <&kp DOLLAR>;
+            layers = <0>
+        };
+        combo_caret {
+            timeout-ms = <200>;
+            key-positions = <30 7 9 19>;
+            bindings = <&kp CARET>;
+            layers = <0>
+        };
+        combo_forwardparanthesis {
+            timeout-ms = <200>;
+            key-positions = <30 10 4 9 19 18>;
+            bindings = <&kp LPAR>;
+            layers = <0>
+        };
+        combo_backwardparanthesis {
+            timeout-ms = <200>;
+            key-positions = <30 9 4 9 19 18>;
+            bindings = <&kp LPAR>;
+            layers = <0>
+        };
+        combo_question {
+            timeout-ms = <200>;
+            key-positions = <30 27 13 19>;
+            bindings = <&kp QMARK>;
+            layers = <0>
+        };
+        combo_forwardbrace {
+            timeout-ms = <200>;
+            key-positions = <30 6 31 9 8>;
+            bindings = <&kp LBRC>;
+            layers = <0>
+        };
+        combo_backwardbrace {
+            timeout-ms = <200>;
+            key-positions = <30 31 31 9 8>;
+            bindings = <&kp RBRC>;
+            layers = <0>
+        };
+        combo_tilde {
+            timeout-ms = <200>;
+            key-positions = <30 19 10 17>;
+            bindings = <&kp TILDE>;
+            layers = <0>
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        // This is a sample keymap intended to be replaced with your own
+        default_layer {
+            label="Base"
+            bindings = <
+                &kp C_PP   &kp APOS   &kp COMMA  &kp PERIOD &kp P     &kp Y            &kp F      &kp G      &kp C      &kp R      &kp L       &kp EQUAL
+                &kp A      &kp S      &kp D      &kp U      &kp I     &kp D            &kp H      &kp T      &kp N      &kp S      &kp DASH    &kp BSLH
+                &kp SEMI   &kp Q      &kp J      &kp K      &kp X     &kp B            &kp M      &kp W      &kp V      &kp Z      &kp TAB     &sk RCONTROL
+                &kp TAB    &kp BSPC   &td0                                                                              &kp ENTER  &kp SPACE   &kp ESC
+                &kp C_PP                                              &kp BSPC         &kp B                                                   &kp EQUAL
+            >;
+        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &lse0 DEFAULT NUMPAD &inc_dec_kp C_PLAY C_PAUSE>;
+        };
+        numpad_function_layer {
+            label="Numpad"
+            bindings = <
+                &kp C_PP  &none      &kp N7     &kp N8     &kp N9   &none            &kp F1      &kp F2      &kp F3      &kp F4      &kp F5     &kp EQUAL
+                &none     &kp N0     &kp N4     &kp N5     &kp N6   &none            &kp F6      &kp F7      &kp F8      &kp F9      &kp F10    &kp BSLH
+                &kp LALT  &none      &kp N1     &kp N2     &kp N3   &none            &kp F11     &kp F12     &none       &kp RALT    &kp TAB    &kp RCONTROL
+                &kp TAB   &kp BSPC   &td0                                                                                &kp ENTER   &kp SPACE  &kp ESC
+                &kp C_PP                                            &kp B            &kp B                                                      &kp EQUAL
+            >;
+        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &lse0 DEFAULT KBS  &inc_dec_kp C_PLAY C_PAUSE>;
+        };
+        settings_layer {
+            label="KBS"
+            bindings = <
+                &kp C_PP   &kp APOS   &kp COMMA  &kp PERIOD &kp P     &bootloader      &bt BT_SEL 0      &bt BT_SEL 1      &kp C      &kp R      &kp L       &kp EQUAL
+                &kp A      &kp S      &kp D      &kp U      &kp I     &bt BT_CLR       &bt BT_SEL 2      &bt BT_SEL 3      &kp N      &kp S      &kp DASH    &kp BSLH
+                &kp SEMI   &kp Q      &kp J      &kp K      &kp X     &kp B            &bt BT_SEL 4      &bt BT_SEL 5      &kp V      &kp Z      &kp TAB     &sk RCONTROL
+                &kp TAB    &kp BSPC   &td0                                                                                            &kp ENTER  &kp SPACE   &kp ESC
+                &kp C_PP                                              &kp BSPC         &kp B                                                                 &kp EQUAL
+            >;
+        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &lse0 NUMPAD KBS &inc_dec_kp C_PLAY C_PAUSE>;
+        };
+    };
+};

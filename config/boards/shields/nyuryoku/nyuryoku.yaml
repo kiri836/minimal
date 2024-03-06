@@ -1,0 +1,13 @@
+file_format: "1"
+id: nyuryoku
+name: nyuryoku
+type: shield
+url: https://github.com/kiri836/nyuryoku/
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+siblings:
+  - nyuryoku_left
+  - nyuryoku_right
