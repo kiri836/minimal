@@ -4,9 +4,11 @@
 
 &left_one_encoder {
     status = "okay";
+    #sensor-binding-cells = <0>;
 };
 &left_two_encoder {
     status = "okay";
+    #sensor-binding-cells = <0>;
 };
 &kscan0 {
     col-gpios
