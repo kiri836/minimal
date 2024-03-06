@@ -3,7 +3,7 @@ id: nyuryoku
 name: nyuryoku
 type: shield
 url: https://github.com/kiri836/nyuryoku/
-requires: [pro_micro]
+requires: [nice_nano_v2]
 exposes: [i2c_oled]
 features:
   - keys
