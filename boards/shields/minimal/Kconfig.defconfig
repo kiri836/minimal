@@ -1,7 +1,7 @@
 if SHIELD_MY_BOARD_RIGHT
 
 config ZMK_KEYBOARD_NAME
-    default "My Board"
+    default "minimal"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
