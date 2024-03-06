@@ -6,6 +6,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
 #define BASE 0
 #define NUMPAD 1
 #define KBS 2
@@ -167,11 +168,11 @@
         settings_layer {
             label="KBS";
             bindings = <
-&kp C_PP   &kp APOS   &kp COMMA  &kp PERIOD &kp P     &bootloader      &bt BT_SEL 0      &bt BT_SEL 1      &kp C      &kp R      &kp L       &kp EQUAL
-&kp A      &kp S      &kp D      &kp U      &kp I     &bt BT_CLR       &bt BT_SEL 2      &bt BT_SEL 3      &kp N      &kp S      &kp MINUS   &kp BSLH
-&kp SEMI   &kp Q      &kp J      &kp K      &kp X     &kp B            &bt BT_SEL 4      &bt BT_SEL 5      &kp V      &kp Z      &kp TAB     &kp RCTRL
-&kp TAB    &kp BSPC   &td0                                                                                            &kp ENTER  &kp SPACE   &kp ESC
-&kp C_PP                                              &kp BSPC         &kp B                                                                 &kp EQUAL
+                &none      &none      &none      &none      &none     &bootloader      &bt BT_SEL 0      &bt BT_SEL 1      &none      &none      &none       &none
+                &none      &none      &none      &none      &none     &bt BT_CLR       &bt BT_SEL 2      &bt BT_SEL 3      &none      &none      &none       &none
+                &none      &none      &none      &none      &none     &none            &bt BT_SEL 4      &bt BT_SEL 5      &none      &none      &none       &none
+                &none      &none      &none                                                                                           &none      &none       &none
+                &none                                                 &none            &none                                                                 &none
             >;
         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &lse0 NUMPAD KBS &inc_dec_kp C_PLAY C_PAUSE>;
         };
