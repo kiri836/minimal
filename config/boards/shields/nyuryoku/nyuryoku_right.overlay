@@ -1,12 +1,7 @@
 #include "nyuryoku.dtsi"
 
-
 #include <dt-bindings/zmk/matrix_transform.h>
 
-chosen {
-    zmk,kscan = &kscan0;
-    zmk,matrix-transform = &default_transform;
-};
 &right_one_encoder {
     status = "okay";
 };
