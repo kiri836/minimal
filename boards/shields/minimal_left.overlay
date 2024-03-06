@@ -15,14 +15,14 @@
         status = "okay";
     };
     &kscan0 {
-    col-gpios
-        = <&nice_nano_v2 15 GPIO_ACTIVE_HIGH> // col1 in the schematic
-        , <&nice_nano_v2 16 GPIO_ACTIVE_HIGH> // col2 in the schematic
-        , <&nice_nano_v2 17 GPIO_ACTIVE_HIGH> // col3 in the schematic
-        , <&nice_nano_v2 18 GPIO_ACTIVE_HIGH> // col4 in the schematic
-        , <&nice_nano_v2 19 GPIO_ACTIVE_HIGH> // col5 in the schematic
-        , <&nice_nano_v2 20 GPIO_ACTIVE_HIGH> // col6 in the schematic
-        ;
+        col-gpios
+            = <&nice_nano_v2 15 GPIO_ACTIVE_HIGH> // col1 in the schematic
+            , <&nice_nano_v2 16 GPIO_ACTIVE_HIGH> // col2 in the schematic
+            , <&nice_nano_v2 17 GPIO_ACTIVE_HIGH> // col3 in the schematic
+            , <&nice_nano_v2 18 GPIO_ACTIVE_HIGH> // col4 in the schematic
+            , <&nice_nano_v2 19 GPIO_ACTIVE_HIGH> // col5 in the schematic
+            , <&nice_nano_v2 20 GPIO_ACTIVE_HIGH> // col6 in the schematic
+            ;
     };
 
     default_transform: keymap_transform_0 {
