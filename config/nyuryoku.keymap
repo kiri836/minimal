@@ -10,12 +10,13 @@
 #define NUMPAD 1
 #define KBS 2
 
+&sk {
+    release-after-ms = <1000>;
+    quick-release;
+    /delete-property/ ignore-modifiers;
+};
+
 / {
-    &sk {
-        release-after-ms = <1000>;
-        quick-release;
-        /delete-property/ ignore-modifiers;
-    };
     behaviors {
         td0: capitalization_tap_dance {
             compatible = "zmk,behavior-tap-dance";
