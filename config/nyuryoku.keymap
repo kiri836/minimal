@@ -151,7 +151,7 @@
                 &kp TAB    &kp BSPC   &td0                                                                              &kp ENTER  &kp SPACE   &kp ESC
                 &kp C_PP                                              &kp BSPC         &kp B                                                   &kp EQUAL
         >;
-        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &lse0 DEFAULT NUMPAD &inc_dec_kp C_PLAY C_PAUSE>;
+        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &lse0 BASE NUMPAD &inc_dec_kp C_PLAY C_PAUSE>;
         };
         numpad_function_layer {
             label="Numpad";
@@ -162,7 +162,7 @@
                 &kp TAB   &kp BSPC   &td0                                                                                &kp ENTER   &kp SPACE  &kp ESC
                 &kp C_PP                                            &kp B            &kp B                                                      &kp EQUAL
         >;
-        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &lse0 DEFAULT KBS  &inc_dec_kp C_PLAY C_PAUSE>;
+        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &lse0 BASE KBS  &inc_dec_kp C_PLAY C_PAUSE>;
         };
         settings_layer {
             label="KBS";
