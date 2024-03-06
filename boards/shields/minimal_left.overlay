@@ -8,6 +8,12 @@
         zmk,kscan = &kscan0;
         zmk,matrix-transform = &default_transform;
     };
+    &left_encoder {
+        status = "okay";
+    };
+    &right_encoder {
+        status = "okay";
+    };
     &kscan0 {
     col-gpios
         = <&nice_nano_v2 15 GPIO_ACTIVE_HIGH> // col1 in the schematic
