@@ -143,7 +143,7 @@
 
         // This is a sample keymap intended to be replaced with your own
         default_layer {
-            label="Base"
+            label="Base";
             bindings = <
                 &kp C_PP   &kp APOS   &kp COMMA  &kp PERIOD &kp P     &kp Y            &kp F      &kp G      &kp C      &kp R      &kp L       &kp EQUAL
                 &kp A      &kp S      &kp D      &kp U      &kp I     &kp D            &kp H      &kp T      &kp N      &kp S      &kp DASH    &kp BSLH
@@ -154,7 +154,7 @@
         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &lse0 DEFAULT NUMPAD &inc_dec_kp C_PLAY C_PAUSE>;
         };
         numpad_function_layer {
-            label="Numpad"
+            label="Numpad";
             bindings = <
                 &kp C_PP  &none      &kp N7     &kp N8     &kp N9   &none            &kp F1      &kp F2      &kp F3      &kp F4      &kp F5     &kp EQUAL
                 &none     &kp N0     &kp N4     &kp N5     &kp N6   &none            &kp F6      &kp F7      &kp F8      &kp F9      &kp F10    &kp BSLH
@@ -165,7 +165,7 @@
         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &lse0 DEFAULT KBS  &inc_dec_kp C_PLAY C_PAUSE>;
         };
         settings_layer {
-            label="KBS"
+            label="KBS";
             bindings = <
                 &kp C_PP   &kp APOS   &kp COMMA  &kp PERIOD &kp P     &bootloader      &bt BT_SEL 0      &bt BT_SEL 1      &kp C      &kp R      &kp L       &kp EQUAL
                 &kp A      &kp S      &kp D      &kp U      &kp I     &bt BT_CLR       &bt BT_SEL 2      &bt BT_SEL 3      &kp N      &kp S      &kp DASH    &kp BSLH
