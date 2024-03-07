@@ -146,11 +146,16 @@
         default_layer {
             label="Base";
             bindings = <
-                &kp Y      &kp P      &kp PERIOD &kp COMMA &kp APOS     &kp C_PP       &kp EQUAL  &kp L      &kp R      &kp C      &kp G       &kp F
-                &kp D      &kp I      &kp U      &kp O      &kp S     &kp A            &kp BSLH   &kp MINUS  &kp S      &kp N      &kp T       &kp H
-                &kp B      &kp X      &kp K      &kp J      &kp Q     &kp SEMI         &kp RCTRL  &kp TAB    &kp Z      &kp V      &kp W       &kp M
-                &td0       &kp BSPC   &kp TAB    &none      &none     &none            &none      &none      &none      &kp ESC    &kp SPACE   &kp ENTER
-                &kp BSPC   &none      &none      &none      &none     &kp C_PP         &kp EQUAL  &none      &none      &none      &none       &kp B
+                &kp Y      &kp P      &kp PERIOD &kp COMMA &kp APOS   &kp C_PP
+                &kp D      &kp I      &kp U      &kp O      &kp S     &kp A
+                &kp B      &kp X      &kp K      &kp J      &kp Q     &kp SEMI
+                &kp EQUAL  &kp L      &kp R      &kp C      &kp G       &kp F
+                &td0       &kp BSPC   &kp TAB    &none      &none     &none
+                &kp BSPC   &none      &none      &none      &none     &kp C_PP
+                &kp BSLH   &kp MINUS  &kp S      &kp N      &kp T       &kp H
+                &kp RCTRL  &kp TAB    &kp Z      &kp V      &kp W       &kp M
+                &none      &none      &none      &kp ESC    &kp SPACE   &kp ENTER
+                &kp EQUAL  &none      &none      &none      &none       &kp B
         >;
         sensor-bindings = <&inc_dec_kp C_PLAY C_PAUSE &lse0 BASE NUMPAD &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
