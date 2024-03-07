@@ -3,7 +3,6 @@
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,matrix-transform = &default_transform;
     };
     left_one_encoder: encoder_left_one {
         compatible = "alps,ec11";
