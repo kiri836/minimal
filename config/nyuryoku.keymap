@@ -146,8 +146,8 @@
         default_layer {
             label="Base";
             bindings = <
-                &kp Y      &kp P      &kp PERIOD &kp COMMA &kp APOS     &kp C_PP       &kp EQUAL  &kp L      &kp R      &kp C      &kp G       &kp F
-                &kp D      &kp I      &kp U      &kp O      &kp S     &kp A            &kp BSLH   &kp MINUS  &kp S      &kp N      &kp T       &kp H
+                &kp Y      &kp P      &kp PERIOD &kp COMMA &kp APOS   &kp C_PP         &kp EQUAL  &kp L      &kp R      &kp C      &kp G       &kp F
+                &kp I      &kp U      &kp O      &kp S      &kp A     &kp MINUS        &kp BSLH   &kp S      &kp N      &kp T      &kp H       &kp D
                 &kp B      &kp X      &kp K      &kp J      &kp Q     &kp SEMI         &kp RCTRL  &kp TAB    &kp Z      &kp V      &kp W       &kp M
                 &td0       &kp BSPC   &kp TAB    &none      &none     &none            &none      &none      &none      &kp ESC    &kp SPACE   &kp ENTER
                 &kp BSPC   &none      &none      &none      &none     &kp C_PP         &kp EQUAL  &none      &none      &none      &none       &kp B
@@ -163,7 +163,7 @@
                 &td0      &kp BSPC   &kp TAB    &none      &none    &none            &none       &none       &none       &kp ESC     &kp SPACE  &kp ENTER
                 &kp B     &none      &none      &none      &none    &kp C_PP         &kp EQUAL   &none       &none       &none       &none      &kp B
         >;
-        sensor-bindings = <&inc_dec_kp C_PLAY C_PAUSE &lse0 NUMPAD KBS &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
+        sensor-bindings = <&inc_dec_kp C_PLAY C_PAUSE &lse0 BASE KBS &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
         settings_layer {
             label="KBS";
