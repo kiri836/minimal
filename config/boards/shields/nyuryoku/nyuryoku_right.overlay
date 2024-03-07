@@ -10,6 +10,3 @@
     status = "okay";
     #sensor-binding-cells = <0>;
 };
-&default_transform {
-    col-offset = <6>;
-};
