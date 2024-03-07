@@ -146,33 +146,33 @@
         default_layer {
             label="Base";
             bindings = <
-                &kp C_PP   &kp APOS   &kp COMMA  &kp PERIOD &kp P     &kp Y            &kp F      &kp G      &kp C      &kp R      &kp L       &kp EQUAL
-                &kp A      &kp S      &kp D      &kp U      &kp I     &kp D            &kp H      &kp T      &kp N      &kp S      &kp MINUS   &kp BSLH
-                &kp SEMI   &kp Q      &kp J      &kp K      &kp X     &kp B            &kp M      &kp W      &kp V      &kp Z      &kp TAB     &kp RCTRL
-                &kp TAB    &kp BSPC   &td0       &none      &none     &none            &none      &none      &none      &kp ENTER  &kp SPACE   &kp ESC
-                &kp C_PP   &none      &none      &none      &none     &kp BSPC         &kp B      &none      &none      &none      &none       &kp EQUAL
+                &kp Y      &kp P      &kp PERIOD &kp COMMA &kp APOS     &kp C_PP       &kp EQUAL  &kp L      &kp R      &kp C      &kp G       &kp F
+                &kp D      &kp I      &kp U      &kp O      &kp S     &kp A            &kp BSLH   &kp MINU   &kp S      &kp N      &kp T       &kp H
+                &kp B      &kp X      &kp K      &kp J      &kp Q     &kp SEMI         &kp RCTRL  &kp TAB    &kp Z      &kp V      &kp W    &kp M
+                &td0       &kp BSPC   &kp TAB    &none      &none     &none            &none      &none      &none      &kp ESC  &kp SPACE   &kp ENTER
+                &kp BSPC   &none      &none      &none      &none     &kp C_PP         &kp EQUAL      &none      &none      &none      &none       &kp B
         >;
         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &lse0 BASE NUMPAD &inc_dec_kp C_PLAY C_PAUSE>;
         };
         numpad_function_layer {
             label="Numpad";
             bindings = <
-                &kp C_PP  &none      &kp N7     &kp N8     &kp N9   &none            &kp F1      &kp F2      &kp F3      &kp F4      &kp F5     &kp EQUAL
-                &none     &kp N0     &kp N4     &kp N5     &kp N6   &none            &kp F6      &kp F7      &kp F8      &kp F9      &kp F10    &kp BSLH
-                &kp LALT  &none      &kp N1     &kp N2     &kp N3   &none            &kp F11     &kp F12     &none       &kp RALT    &kp TAB    &kp RCTRL
-                &kp TAB   &kp BSPC   &td0       &none      &none    &none            &none       &none       &none       &kp ENTER   &kp SPACE  &kp ESC
-                &kp C_PP  &none      &none      &none      &none    &kp B            &kp B       &none       &none       &none       &none      &kp EQUAL
+                &none     &kp N9     &kp N8     &kp N7     &none    &kp C_PP         &kp EQUAL   &kp F5      &kp F4      &kp F3      &kp F2     &kp F1     
+                &none     &kp N6     &kp N5     &kp N4     &kp N0   &none            &kp BSLH    &kp F10     &kp F8      &kp F8      &kp F7      &kp F6    
+                &none     &kp N3     &kp N2     &kp N1     &none    &kp LALT         &kp RALT    &kp TAB     &kp RCTRL   &none       &kp F12     &kp F11            
+                &td0      &kp BSPC   &kp TAB    &none      &none    &none            &none       &none       &none       &kp ESC     &kp SPACE  &kp ENTER
+                &kp B     &none      &none      &none      &none    &kp C_PP         &kp EQUAL   &none       &none       &none       &none      &kp B
         >;
         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &lse0 BASE KBS  &inc_dec_kp C_PLAY C_PAUSE>;
         };
         settings_layer {
             label="KBS";
             bindings = <
-                &none      &none      &none      &none      &none     &bootloader      &bt BT_SEL 0      &bt BT_SEL 1      &none      &none      &none       &none
-                &none      &none      &none      &none      &none     &bt BT_CLR       &bt BT_SEL 2      &bt BT_SEL 3      &none      &none      &none       &none
-                &none      &none      &none      &none      &none     &none            &bt BT_SEL 4      &bt BT_SEL 5      &none      &none      &none       &none
-                &none      &none      &none      &none      &none     &none            &none             &none             &none      &none      &none       &none
-                &none      &none      &none      &none      &none     &none            &none             &none             &none      &none      &none       &none
+                &bootloader &none      &none      &none      &none     &none            &none       &none      &none      &none      &bt BT_SEL 0 &bt BT_SEL 1
+                &bt BT_CLR  &none      &none      &none      &none     &none            &none       &none      &none      &none      &bt BT_SEL 2 &bt BT_SEL 3
+                &none       &none      &none      &none      &none     &none            &none       &none      &none      &none      &bt BT_SEL 4 &bt BT_SEL 5
+                &none       &none      &none      &none      &none     &none            &none       &none      &none      &none      &none        &none
+                &none       &none      &none      &none      &none     &none            &none       &none      &none      &none      &none        &none
             >;
         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &lse0 NUMPAD KBS &inc_dec_kp C_PLAY C_PAUSE>;
         };
