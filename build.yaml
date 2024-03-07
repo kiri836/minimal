@@ -22,3 +22,5 @@ include:
     shield: nyuryoku_left
   - board: nice_nano_v2
     shield: nyuryoku_right
+  - board: nice_nano_v2
+    shield: settings_reset
