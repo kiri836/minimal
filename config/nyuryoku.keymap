@@ -147,7 +147,7 @@
             label="Base";
             bindings = <
                 &kp Y      &kp P      &kp PERIOD &kp COMMA &kp APOS   &kp C_PP         &kp EQUAL  &kp L      &kp R      &kp C      &kp G       &kp F
-                &kp I      &kp U      &kp O      &kp S      &kp A     &kp MINUS        &kp BSLH   &kp S      &kp N      &kp T      &kp H       &kp D
+                &kp I      &kp U      &kp O      &kp E      &kp A     &kp MINUS        &kp BSLH   &kp S      &kp N      &kp T      &kp H       &kp D
                 &kp B      &kp X      &kp K      &kp J      &kp Q     &kp SEMI         &kp RCTRL  &kp TAB    &kp Z      &kp V      &kp W       &kp M
                 &td0       &kp BSPC   &kp TAB    &none      &none     &none            &none      &none      &none      &kp ESC    &kp SPACE   &kp ENTER
                 &kp BSPC   &none      &none      &none      &none     &kp C_PP         &kp EQUAL  &none      &none      &none      &none       &kp B
