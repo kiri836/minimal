@@ -34,7 +34,7 @@
             #sensor-binding-cells = <2>;
             bindings = <&to>, <&to>;
         };
-        &lt {
+        lt {
             tapping-term-ms = <200>;
         };
     };
