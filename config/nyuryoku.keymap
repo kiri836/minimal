@@ -34,6 +34,9 @@
             #sensor-binding-cells = <2>;
             bindings = <&to>, <&to>;
         };
+        &lt {
+            tapping-term-ms = <200>;
+        };
     };
     combos {
         compatible = "zmk,combos";
@@ -149,15 +152,15 @@
             label="BASE";
             bindings = <
                 &kp C_PP        &kp APOS   &kp COMMA  &kp PERIOD &kp P      &kp Y            &kp F      &kp G      &kp C      &kp R      &kp L       &kp EQUAL
-                &kp A           &kp A      &kp S      &kp D      &kp U      &kp I            &kp D      &kp H      &kp T      &kp N      &kp S       &kp MINUS
+                &lt 3           &kp A      &kp S      &kp D      &kp U      &kp I            &kp D      &kp H      &kp T      &kp N      &kp S       &kp MINUS
                 &kp LCTRL       &kp SEMI   &kp Q      &kp J      &kp K      &kp X            &kp B      &kp M      &kp W      &kp V      &kp Z       &kp EQUAL
                 &none           &none      &none      &kp TAB    &kp BSPC   &kp LSHIFT       &kp ENTER  &kp SPACE  &kp ESC    &none      &none       &none
                 &kp C_PP        &none      &none      &none      &none      &kp BSPC         &kp B      &none      &none      &none      &none       &kp EQUAL
             >;
-            sensor-bindings = <&lse0 BASE NUMPAD &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp BASE NUMPAD &inc_dec_kp C_PLAY C_PAUSE>;
+            sensor-bindings = <&lse0 0 1 &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp 0 1 &inc_dec_kp C_PLAY C_PAUSE>;
         };
         otherkeys {
-            label="OTHERKEYS";
+            label="OtherKeys";
             bindings = <
                 &kp C_PP  &kp EXCL   &kp HASH   &kp AT     &kp DLLR  &kp PRCNT       &kp F1      &kp F2      &kp F3      &kp F4      &kp F5     &kp EQUAL
                 &kp TILDE &kp CARET  &kp AMPS   &kp STAR   &kp LPAR  &kp RPAR        &kp F6      &kp F7      &kp F8      &kp F9      &kp F10    &kp BSLH
@@ -165,7 +168,7 @@
                 &none     &none      &none      &kp TAB    &kp BSPC  &td0            &kp ENTER   &kp SPACE   &kp ESC     &none       &none      &none
                 &kp C_PP                                             &kp B           &kp B                                                      &kp EQUAL
             >;
-            sensor-bindings = <&lse0 BASE NUMPAD &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp BASE NUMPAD &inc_dec_kp C_PLAY C_PAUSE>;
+            sensor-bindings = <&lse0 0 1 &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp 0 1 &inc_dec_kp C_PLAY C_PAUSE>;
         };
         numpad_function_layer {
             label="NUMPAD";
@@ -176,7 +179,7 @@
                 &none     &none      &none      &kp TAB    &kp BSPC &td0             &kp ENTER   &kp SPACE   &kp ESC     &none       &none      &none
                 &kp C_PP                                            &kp B            &kp B                                                      &kp EQUAL
             >;
-            sensor-bindings = <&lse0 BASE KBS &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp BASE KBS &inc_dec_kp C_PLAY C_PAUSE>;
+            sensor-bindings = <&lse0 0 2 &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp 0 2 &inc_dec_kp C_PLAY C_PAUSE>;
         };
         settings_layer {
             label="KBS";
@@ -187,7 +190,7 @@
                 &none      &none      &none        &none      &none     &none            &none             &none             &none      &none      &none       &none
                 &none      &none      &none        &none      &none     &none            &none             &none             &none      &none      &none       &none
             >;
-            sensor-bindings = <&lse0 NUMPAD KBS &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp NUMPAD KBS &inc_dec_kp C_PLAY C_PAUSE>;
+            sensor-bindings = <&lse0 1 2 &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp 1 2 &inc_dec_kp C_PLAY C_PAUSE>;
         };
     };
 };
