@@ -169,7 +169,7 @@
                 &none     &none      &none      &kp TAB    &kp BSPC  &td0            &kp ENTER   &kp SPACE   &kp ESC     &none       &none      &none
                 &kp C_PP                                             &kp B           &kp B                                                      &kp EQUAL
             >;
-        }
+        };
         numpad_function_layer {
             label="NUMPAD";
             bindings = <
