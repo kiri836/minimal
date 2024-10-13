@@ -12,6 +12,7 @@
 #define NUMPAD 1
 #define KBS 2
 #define OTHERKEYS 3
+
 / {
     behaviors {
         skq: sticky_key_quick_release {
@@ -148,12 +149,12 @@
             label="BASE";
             bindings = <
                 &kp C_PP        &kp APOS   &kp COMMA  &kp PERIOD &kp P      &kp Y            &kp F      &kp G      &kp C      &kp R      &kp L       &kp EQUAL
-                &lt 3           &kp A      &kp S      &kp D      &kp U      &kp I            &kp D      &kp H      &kp T      &kp N      &kp S       &kp MINUS
+                &lt OTHERKEYS   &kp A      &kp S      &kp D      &kp U      &kp I            &kp D      &kp H      &kp T      &kp N      &kp S       &kp MINUS
                 &kp LCTRL       &kp SEMI   &kp Q      &kp J      &kp K      &kp X            &kp B      &kp M      &kp W      &kp V      &kp Z       &kp EQUAL
                 &none           &none      &none      &kp TAB    &kp BSPC   &kp LSHIFT       &kp ENTER  &kp SPACE  &kp ESC    &none      &none       &none
                 &kp C_PP        &none      &none      &none      &none      &kp BSPC         &kp B      &none      &none      &none      &none       &kp EQUAL
             >;
-            sensor-bindings = <&lse0 0 1 &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp 0 1 &inc_dec_kp C_PLAY C_PAUSE>;
+            sensor-bindings = <&lse0 BASE NUMPAD &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp BASE NUMPAD &inc_dec_kp C_PLAY C_PAUSE>;
         };
         otherkeys {
             label="OtherKeys";
@@ -164,7 +165,7 @@
                 &none     &none      &none      &kp TAB    &kp BSPC  &td0            &kp ENTER   &kp SPACE   &kp ESC     &none       &none      &none
                 &kp C_PP                                             &kp B           &kp B                                                      &kp EQUAL
             >;
-            sensor-bindings = <&lse0 0 1 &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp 0 1 &inc_dec_kp C_PLAY C_PAUSE>;
+            sensor-bindings = <&lse0 BASE NUMPAD &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp BASE NUMPAD &inc_dec_kp C_PLAY C_PAUSE>;
         };
         numpad_function_layer {
             label="NUMPAD";
@@ -175,7 +176,7 @@
                 &none     &none      &none      &kp TAB    &kp BSPC &td0             &kp ENTER   &kp SPACE   &kp ESC     &none       &none      &none
                 &kp C_PP                                            &kp B            &kp B                                                      &kp EQUAL
             >;
-            sensor-bindings = <&lse0 0 2 &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp 0 2 &inc_dec_kp C_PLAY C_PAUSE>;
+            sensor-bindings = <&lse0 BASE KBS &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp BASE KBS &inc_dec_kp C_PLAY C_PAUSE>;
         };
         settings_layer {
             label="KBS";
@@ -186,7 +187,7 @@
                 &none      &none      &none        &none      &none     &none            &none             &none             &none      &none      &none       &none
                 &none      &none      &none        &none      &none     &none            &none             &none             &none      &none      &none       &none
             >;
-            sensor-bindings = <&lse0 1 2 &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp 1 2 &inc_dec_kp C_PLAY C_PAUSE>;
+            sensor-bindings = <&lse0 NUMPAD KBS &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp NUMPAD KBS &inc_dec_kp C_PLAY C_PAUSE>;
         };
     };
 };
