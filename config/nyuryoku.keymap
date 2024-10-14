@@ -14,7 +14,7 @@
 #define OTHERKEYS 3
 
 / {
-    &lt {
+    lt {
         tapping-term-ms = <200>;
     };
     behaviors {
