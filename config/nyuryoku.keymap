@@ -14,9 +14,6 @@
 #define OTHERKEYS 3
 
 / {
-    lt {
-        tapping-term-ms = <200>;
-    };
     behaviors {
         skq: sticky_key_quick_release {
             compatible = "zmk,behavior-sticky-key";
@@ -36,6 +33,9 @@
             compatible = "zmk,behavior-sensor-rotate-var";
             #sensor-binding-cells = <2>;
             bindings = <&to>, <&to>;
+        };
+        lt {
+            tapping-term-ms = <200>;
         };
     };
     combos {
