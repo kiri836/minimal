@@ -153,7 +153,7 @@
                 &none           &none      &none      &kp TAB    &kp BSPC   &kp LSHIFT       &kp ENTER  &kp SPACE  &kp ESC    &none      &none       &none
                 &kp C_PP        &none      &none      &none      &none      &kp BSPC         &kp B      &none      &none      &none      &none       &kp EQUAL
             >;
-            sensor-bindings = <&lse0 0 1 &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp 0 1 &lse0 C_PLAY C_PAUSE>;
+            sensor-bindings = <&lse0 0 1 &inc_dec_kp C_VOL_UP C_VOL_DN &lse0 0 1 &inc_dec_kp C_PLAY C_PAUSE>;
         };
         numpad_function_layer {
             bindings = <
@@ -163,7 +163,7 @@
                 &none     &none      &none      &kp TAB    &kp BSPC &td0             &kp ENTER   &kp SPACE   &kp ESC     &none       &none      &none
                 &kp C_PP                                            &kp B            &kp B                                                      &kp EQUAL
             >;
-            sensor-bindings = <&lse0 0 2 &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp 0 2 &lse0 C_PLAY C_PAUSE>;
+            sensor-bindings = <&lse0 0 2 &inc_dec_kp C_VOL_UP C_VOL_DN &lse0 0 2 &inc_dec_kp C_PLAY C_PAUSE>;
         };
         settings_layer {
             bindings = <
@@ -173,7 +173,7 @@
                 &none      &none      &none        &none      &none     &none            &none             &none             &none       &none      &none       &none
                 &none      &none      &none        &none      &none     &none            &none             &none             &none       &none      &none       &none
             >;
-            sensor-bindings = <&lse0 1 2 &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp 1 2 &lse0 C_PLAY C_PAUSE>;
+            sensor-bindings = <&lse0 1 2 &inc_dec_kp C_VOL_UP C_VOL_DN &lse0 1 2 &inc_dec_kp C_PLAY C_PAUSE>;
         };
         otherkeys {
             bindings = <
@@ -183,7 +183,7 @@
                 &none     &none      &none      &kp TAB    &kp BSPC  &td0            &kp ENTER   &kp SPACE   &kp ESC     &none       &none      &none
                 &kp C_PP                                             &kp B           &kp B                                                      &kp EQUAL
             >;
-            sensor-bindings = <&lse0 0 1 &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp 0 1 &lse0 C_PLAY C_PAUSE>;
+            sensor-bindings = <&lse0 0 1 &inc_dec_kp C_VOL_UP C_VOL_DN &lse0 0 1 &inc_dec_kp C_PLAY C_PAUSE>;
         };
     };
 };
