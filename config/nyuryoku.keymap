@@ -15,7 +15,7 @@
 
 / {
     sensors {
-        triggers-per-rotation = <12>;
+        triggers-per-rotation = <1>;
     };
     behaviors {
         skq: sticky_key_quick_release {
@@ -151,7 +151,7 @@
         default_layer {
             bindings = <
                 &kp C_PP        &kp APOS   &kp COMMA  &kp PERIOD &kp P      &kp Y            &kp F      &kp G      &kp C      &kp R      &kp L       &kp EQUAL
-                &mo 3           &kp A      &kp S      &kp D      &kp U      &kp I            &kp D      &kp H      &kp T      &kp N      &kp S       &kp MINUS
+                &mo 3           &kp A      &kp S      &kp D      &kp U      &kp I            &kp D      &kp H      &kp T      &kp N      &kp S       &mo 3
                 &kp LCTRL       &kp SEMI   &kp Q      &kp J      &kp K      &kp X            &kp B      &kp M      &kp W      &kp V      &kp Z       &kp EQUAL
                 &none           &none      &none      &kp TAB    &kp BSPC   &kp LSHIFT       &kp ENTER  &kp SPACE  &kp ESC    &none      &none       &none
                 &kp C_PP        &none      &none      &none      &none      &kp BSPC         &kp B      &none      &none      &none      &none       &kp EQUAL
@@ -180,11 +180,11 @@
         };
         otherkeys {
             bindings = <
-                &kp C_PP  &kp EXCL   &kp HASH   &kp AT     &kp DLLR  &kp PRCNT       &kp F1      &kp F2      &kp F3      &kp F4      &kp F5     &kp EQUAL
-                &kp TILDE &kp CARET  &kp AMPS   &kp STAR   &kp LPAR  &kp RPAR        &kp F6      &kp F7      &kp F8      &kp F9      &kp F10    &kp BSLH
-                &kp LALT  &kp FSLH   &kp LBRC   &kp RBRC   &kp GRAVE &none           &kp F11     &kp F12     &none       &kp RALT    &kp TAB    &kp RCTRL
-                &none     &none      &none      &kp TAB    &kp BSPC  &td0            &kp ENTER   &kp SPACE   &kp ESC     &none       &none      &none
-                &kp C_PP                                             &kp B           &kp B                                                      &kp EQUAL
+                &kp C_PP    &kp EXCL   &kp HASH   &kp AT     &kp DLLR  &kp PRCNT       &kp TILDE   &kp F2      &kp F3      &kp F4      &kp F5     &kp EQUAL
+                &none       &kp LBRC   &kp RBRC   &kp LPAR   &kp RPAR  &kp STAR        &kp F6      &kp F7      &kp F8      &kp F9      &kp F10    &none
+                &bootloader &kp FSLH   &kp CARET  &kp AMPS   &kp GRAVE &none           &kp F11     &kp F12     &none       &kp RALT    &kp TAB    &bootloader
+                &none       &none      &none      &kp TAB    &kp BSPC  &td0            &kp ENTER   &kp SPACE   &kp ESC     &none       &none      &none
+                &kp C_PP                                               &kp B           &kp B                                                      &kp EQUAL
             >;
             sensor-bindings = <&lse0 0 1 &inc_dec_kp C_VOL_UP C_VOL_DN &lse0 0 1 &inc_dec_kp C_PLAY C_PAUSE>;
         };
