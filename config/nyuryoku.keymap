@@ -183,6 +183,7 @@
                 &none     &none      &none      &kp TAB    &kp BSPC  &td0            &kp ENTER   &kp SPACE   &kp ESC     &none       &none      &none
                 &kp C_PP                                             &kp B           &kp B                                                      &kp EQUAL
             >;
+            sensor-bindings = <&lse0 0 1 &inc_dec_kp C_VOL_UP C_VOL_DN &lse0 0 1 &inc_dec_kp C_PLAY C_PAUSE>;
         };
     };
 };
