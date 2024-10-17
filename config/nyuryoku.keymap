@@ -14,6 +14,9 @@
 #define OTHERKEYS 3
 
 / {
+    &sensors {
+        triggers-per-rotation = <1>;
+    };
     behaviors {
         skq: sticky_key_quick_release {
             compatible = "zmk,behavior-sticky-key";
@@ -31,7 +34,7 @@
         };
         lse0: layerSwitchEncoder {
             compatible = "zmk,behavior-sensor-rotate-var";
-            #sensor-binding-cells = <0>;
+            #sensor-binding-cells = <2>;
             bindings = <&to>, <&to>;
         };
     };
