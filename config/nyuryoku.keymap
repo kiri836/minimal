@@ -14,7 +14,7 @@
 #define OTHERKEYS 3
 
 / {
-    &sensors {
+    sensors {
         triggers-per-rotation = <1>;
     };
     behaviors {
