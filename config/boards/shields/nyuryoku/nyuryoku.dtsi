@@ -9,28 +9,28 @@
         compatible = "alps,ec11";
         a-gpios = <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        steps = <1>;
+        steps = <2>;
         status = "disabled";
     };
     left_two_encoder: encoder_left_two {
         compatible = "alps,ec11";
         a-gpios = <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        steps = <1>;
+        steps = <2>;
         status = "disabled";
     };
     right_one_encoder: encoder_right_one {
         compatible = "alps,ec11";
         a-gpios = <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        steps = <1>;
+        steps = <2>;
         status = "disabled";
     };
     right_two_encoder: encoder_right_two {
         compatible = "alps,ec11";
         a-gpios = <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        steps = <1>;
+        steps = <2>;
         status = "disabled";
     };
     sensors: sensors {
