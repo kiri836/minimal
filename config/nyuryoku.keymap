@@ -152,7 +152,7 @@
                 &none       &none      &none      &kp TAB    &kp BSPC   &kp LSHIFT       &kp ENTER  &kp SPACE  &kp ESC    &none      &none       &none
                 &kp B       &none      &none      &none      &none      &kp BSPC         &kp B      &none      &none      &none      &none       &kp EQUAL
             >;
-            sensor-bindings = <&lse0 0 1 &inc_dec_kp C_VOL_UP C_VOL_DN &lse0 0 1 &inc_dec_kp C_PLAY C_PAUSE>;
+            sensor-bindings = <&inc_dec_kp B K &inc_dec_kp C_VOL_UP C_VOL_DN &lse0 0 1 &inc_dec_kp C_PLAY C_PAUSE>;
         };
         numpad_function_layer {
             bindings = <
