@@ -14,11 +14,6 @@
 #define OTHERKEYS 3
 
 / {
-    sensors {
-        compatible = "alps,ec11";
-        triggers-per-rotation = <1>;
-        steps = <1>;
-    };
     behaviors {
         skq: sticky_key_quick_release {
             compatible = "zmk,behavior-sticky-key";
