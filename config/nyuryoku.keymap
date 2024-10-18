@@ -16,7 +16,7 @@
 / {
     sensors {
         triggers-per-rotation = <1>;
-        steps = <24>;
+        steps = <1>;
     };
     behaviors {
         skq: sticky_key_quick_release {
