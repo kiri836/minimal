@@ -142,7 +142,7 @@
     };
 
     keymap {
-        compatible = "zmk,keymap-sensors";
+        compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
