@@ -31,6 +31,7 @@
         };
         lse0: layerSwitchEncoder {
             compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
             bindings = <&to>, <&to>;
         };
     };
