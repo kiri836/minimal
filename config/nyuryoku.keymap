@@ -146,7 +146,7 @@
     };
 
     keymap {
-        compatible = "zmk,keymap";
+        compatible = "zmk,keymap-sensors";
 
         // This is a sample keymap intended to be replaced with your own
         default_layer {
