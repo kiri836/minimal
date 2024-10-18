@@ -4,11 +4,9 @@
 
 &right_one_encoder {
     status = "okay";
-    #sensor-binding-cells = <0>;
 };
 &right_two_encoder {
     status = "okay";
-    #sensor-binding-cells = <0>;
 };
 &default_transform {
     col-offset = <7>;
